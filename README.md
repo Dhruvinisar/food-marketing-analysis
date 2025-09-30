@@ -1,42 +1,99 @@
-Introduction
-This project analyzes customer demographics, household profiles, and purchasing behavior to uncover what drives marketing campaign acceptance in the U Food Marketing dataset. Using Python and exploratory data analysis (EDA), the notebook highlights key trends and provides actionable marketing recommendations.
-📂 Dataset
-File: u_food_marketing.csv
-Key features include:
-Demographics: Age, marital status, education, number of children
-Purchasing Behavior: Web, catalog, and store purchases
-Marketing Response: Acceptance across multiple campaigns
-⚙️ Methods
-Data Cleaning & Feature Engineering
-Removed duplicates and handled categorical dummies
-Created new variables (Total_Children, Marital_Status, Education_Status, Accepted_Campaigns)
-Exploratory Data Analysis (EDA)
-Pearson correlation analysis
-Visualizations with Seaborn & Matplotlib
-Age segmentation and purchasing channel comparisons
-Segmentation Dimensions
-Age groups (23–30, 31–40, …, 71–85)
-Household size (children)
-Marital status categories
-Education levels
-🔍 Key Findings
-Customers aged 31–70 spend the most, but have lower campaign acceptance.
-Younger (23–30) and older (71+) customers accept campaigns more often, but spend less.
-Catalog purchases are strong predictors of campaign acceptance.
-Fewer children → higher likelihood of campaign acceptance.
-Married, single, and together customers spend more compared to divorced/widowed.
-🎯 Recommendations
-Split Marketing Focus
-Use catalogs to boost acceptance
-Maintain web/in-store presence for higher volume
-Target Demographics
-Focus on 31–70 for high spend
-Tailor campaigns for 23–30 and 71+ who are more responsive
-Household Segmentation
-Prioritize smaller households with fewer children
-Marital Status Strategy
-Focus on Married, Single, and Together groups
-🛠️ Tools & Libraries
-Python (Pandas, NumPy)
-Seaborn, Matplotlib (visualization)
-Jupyter Notebook
+# 🍽️ U Food Marketing Analysis
+
+## 📌 Overview
+
+This project explores **customer demographics, household profiles, and purchasing behavior** to understand what drives **marketing campaign acceptance** in the U Food Marketing dataset.
+
+Using **Python** and **exploratory data analysis (EDA)**, the notebook uncovers insights into age, family size, marital status, and purchase channels — and how they influence **spending vs. responsiveness to campaigns**.
+
+
+
+## 📂 Dataset
+
+* **File:** `u_food_marketing.csv`
+* **Key Columns:**
+
+  * 👤 Demographics → Age, marital status, education, children
+  * 🛒 Purchases → Web, catalog, in-store transactions
+  * 📢 Marketing Response → Acceptance across multiple campaigns
+
+
+## ⚙️ Workflow
+
+1. **Data Cleaning & Feature Engineering**
+
+   * Removed duplicates
+   * Built new features:
+
+     * `Total_Children`
+     * `Marital_Status`
+     * `Education_Status`
+     * `Accepted_Campaigns`
+
+2. **Exploratory Data Analysis (EDA)**
+
+   * Correlation analysis (Pearson)
+   * Visualizations (Seaborn, Matplotlib)
+   * Segmentation by age, household size, marital status
+
+3. **Segmentation Dimensions**
+
+   * Age groups (23–30, 31–40, …, 71–85)
+   * Number of children
+   * Marital status categories
+   * Education levels
+
+## 🔍 Key Insights
+
+* 💵 **31–70 years old** → spend the most, but accept fewer campaigns
+* 👶 **Fewer children** → higher chance of accepting campaigns
+* 📚 **Education** → minimal impact on spending/acceptance
+* 💍 **Married / Single / Together** → higher spending vs. Divorced / Widowed
+* 📦 **Catalog purchases** → strongest link to campaign acceptance
+
+---
+
+## 🎯 Recommendations
+
+✅ **Split strategy**: use catalogs to increase acceptance, but keep investing in web/in-store for higher volume.
+✅ **Target demographics**:
+
+* 31–70 → focus for high spend
+* 23–30 & 71+ → tailor campaigns for higher responsiveness
+  ✅ **Households**: prioritize smaller families (fewer children).
+  ✅ **Marital groups**: focus on Married, Single, and Together segments.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Python** → pandas, numpy
+* **Visualization** → seaborn, matplotlib
+* **Environment** → Jupyter Notebook
+
+
+## 🚀 How to Run Locally
+
+```bash
+# 1. Clone this repository
+git clone https://github.com/your-username/u-food-marketing-analysis.git
+
+# 2. Navigate into the folder
+cd u-food-marketing-analysis
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Launch Jupyter Notebook
+jupyter notebook "U Food Marketing analysis.ipynb"
+
+
+## 📈 Future Enhancements
+
+* 🤖 Build predictive models for campaign acceptance probability
+* 🧪 A/B test catalog vs. digital marketing
+* 📊 Apply clustering (e.g., K-Means) for advanced segmentation
+
+✍️ **Author:** Dhruvi Nisar
+📌 Part of my **Analytics & Data Storytelling Portfolio
+
